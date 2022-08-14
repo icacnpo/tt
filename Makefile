@@ -88,7 +88,8 @@ gc:
 
 up:
 	pwd
-	nice -n 17 git push -u origin master
+	#nice -n 17 git push -u origin master
+	nice -n 17 git push 
 
 
 gcXmmm:=$(shell (LC_ALL=C date +"%Y%m%d_%H%M%p" ; cat /etc/timezone )|tr "/\r\n-" _)
